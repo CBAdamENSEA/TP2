@@ -63,9 +63,9 @@ void shell(void)
 		{
 			state=LED_TOGGLE;
 		}
-		sprintf(state_msg,"%d\n\r",strcmp(RX_buffer,"LED_ON"));
+		//sprintf(state_msg,"%d\n\r",strcmp(RX_buffer,"LED_ON"));
 		//HAL_UART_Transmit(&huart1, RX_buffer, buffer_size, HAL_MAX_DELAY);
-		HAL_UART_Transmit(&huart1, state_msg, 5, HAL_MAX_DELAY);
+		//HAL_UART_Transmit(&huart1, state_msg, 5, HAL_MAX_DELAY);
 		reading=1;
 
 	}
